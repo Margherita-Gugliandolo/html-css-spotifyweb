@@ -22,21 +22,55 @@ body{
 .fixed-left{
   position:fixed;
   width:15%;
-  height: calc(100% - 10%);
-  border: 1px solid black;
+  height: calc(100% - 100px);
   background-color: green;
 }
 
 .container-flex{
   display: flex;
+  margin-top: 100px;
+  justify-content: center;
+  list-style: none;
+  justify-content: space-around;
+}
+/* regole di debug */
+
+
+.contenuto-prova{
   width:100%;
-  height: 90vh;
+  height:200px;
+  border: 2px solid black;
+  background-color: purple;
 }
 
+
 footer{
+  display: flex;
+  align-items: flex-end;
+  height:100vh;
+  position:relative;
+}
+
+.blocco-app{
+  display: flex;
+  width:15%;
+  height:100%;
+
+}
+.registrati{
+  align-self: flex-end;
+  width:100%;
+  height:20vh;
+  border:2px solid black;
+  background-color: pink;
+}
+
+.player{
   background-color: yellow;
   width:100%;
-  height:10vh;
+  height:80px;
   position:fixed;
-  z-index: 999;
+  top:91vh;
+  left:0;
+  z-index: 2;
 }
