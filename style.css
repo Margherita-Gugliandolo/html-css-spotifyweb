@@ -1,0 +1,42 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+#logo{
+  width:150px;
+}
+.fixed-top{
+  background-color: #000;
+  position:fixed;
+  z-index: 999;
+  width:100%;
+  height:100px;
+  top:0;
+  left:0;
+}
+.fixed-left{
+  position:fixed;
+  width:15%;
+  height: calc(100% - 10%);
+  border: 1px solid black;
+  background-color: green;
+}
+
+.container-flex{
+  display: flex;
+  width:100%;
+  height: 90vh;
+}
+
+footer{
+  background-color: yellow;
+  width:100%;
+  height:10vh;
+  position:fixed;
+  z-index: 999;
+}
