@@ -5,6 +5,7 @@ box-sizing:border-box;
 }
 body{
   font-family: 'Montserrat', sans-serif;
+  background-color: #353535;
 }
 /* Parte superiore/header */
 #header{
@@ -73,32 +74,69 @@ body{
 
 #left-section a{
   text-decoration: none;
-  color:#ccc;
+  color: rgba(211, 211, 211, 0.5);
 }
 
-.playlist ul li, .home ul li{
-  padding:5px 0;
+.menu-playlist ul li, .home ul li{
+  font-size: 14px;
+  padding-bottom:15px;
+  padding-left: 15px;
+  list-style:none;
+}
+
+#johndoe i, .menu-playlist i, .home i{
+  margin-right: 5px;
+}
+
+.home, .playlist, .menu-playlist{
+  width:80%;
+  position: absolute;
 }
 
 .home{
-  position: absolute;
-  top:90px;
+  top:100px;
   height:80px;
-  border:1px solid black;
 }
 
 .playlist{
-  position:absolute;
-  top:190px;
-  height:200px;
-  border:1px solid #000;
+  top:220px;
+  height:20vh;
+  padding-left:15px;
 }
 
-.johndoe{
-  position:absolute;
-  top:600px;
-  height:50px;
-  border:1px solid #000;
+.playlist h2{
+  margin-bottom: 10px;
+}
+.fa-plus-square{
+  font-size: 32px;
+}
+
+/* menu con la scrollbar */
+.menu-playlist{
+  top:300px;
+  height:20vh;
+  overflow: auto;
+}
+/* playlist scrollbar */
+.menu-playlist::-webkit-scrollbar {
+  width: 0.3em;
+}
+
+.menu-playlist::-webkit-scrollbar-thumb {
+  background-color: #a1ff00;
+}
+
+/* installa app-John Doe */
+#johndoe{
+  padding: 15px;
+  position:fixed;
+  top:75vh;
+  left:0;
+  z-index: 99;
+}
+
+ #johndoe h2, #johndoe i, #johndoe a {
+  padding:10px 0;
 }
 
 /* Sezione di destra */
