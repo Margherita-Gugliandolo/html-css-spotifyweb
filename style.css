@@ -50,6 +50,7 @@ body{
   background-color: pink;
 }
 
+/* Sezione sinistra */
 #left-section{
   width:200px;
   height:calc(100vh - 93px);
@@ -58,6 +59,28 @@ body{
   left:0;
   border: 1px solid #000;
   background-color: green;
+  position: relative;
+}
+
+.home{
+  position: absolute;
+  top:90px;
+  height:80px;
+  border:1px solid black;
+}
+
+.playlist{
+  position:absolute;
+  top:180px;
+  height:200px;
+  border:1px solid #000;
+}
+
+.johndoe{
+  position:absolute;
+  top:600px;
+  height:50px;
+  border:1px solid #000;
 }
 
 #player{
@@ -65,4 +88,6 @@ body{
   height:93px;
   border: 1px solid #000;
   background-color: yellow;
+  position: fixed;
+  z-index: 4;
 }
