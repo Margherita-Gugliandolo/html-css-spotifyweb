@@ -33,7 +33,7 @@ body{
   width:150px;
 }
 
-/* effettua l'upgrade */
+/* Bottone effettua l'upgrade */
 #header a{
   text-decoration: none;
   color:#fff;
@@ -68,29 +68,41 @@ body{
 
 #left-section h2{
   color:#fff;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 #left-section a{
   text-decoration: none;
   color: rgba(211, 211, 211, 0.5);
+  font-size: 12px;
+  font-weight: 600;
 }
 
 #left-section a:hover{
   color:#fff;
 }
 
-.menu-playlist ul li, .home ul li{
-  font-size: 14px;
-  padding-bottom:15px;
-  padding-left: 15px;
-  list-style:none;
-}
-
-#johndoe i, .menu-playlist i, .home i{
+#left-section .home img{
+  width:25px;
   margin-right: 5px;
 }
+.home ul li{
+  padding-bottom: 5px;
+  padding-left: 15px;
+}
 
+/* barretta laterale di visualizzato */
+#slash{
+  color:#a1ff00;
+  font-size: 30px;
+}
+
+.home ul li:first-child{
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* posizionamento dei menu di sinistra in absolute */
 .home, .playlist, .menu-playlist{
   width:80%;
   position: absolute;
@@ -98,7 +110,7 @@ body{
 
 .home{
   top:100px;
-  height:80px;
+  height:20vh;
 }
 
 .playlist{
@@ -108,10 +120,17 @@ body{
 }
 
 .playlist h2{
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
+
+/* centratura + creaplaylist */
 .fa-plus-square{
-  font-size: 32px;
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+.crea-playlist span{
+  line-height: 40px;
 }
 
 /* menu con la scrollbar */
@@ -120,13 +139,16 @@ body{
   height:20vh;
   overflow: auto;
 }
-/* playlist scrollbar */
-.menu-playlist::-webkit-scrollbar {
-  width: 0.3em;
+
+.menu-playlist ul li{
+  font-size: 14px;
+  padding-bottom:15px;
+  padding-left: 15px;
+  list-style:none;
 }
 
-.menu-playlist::-webkit-scrollbar-thumb {
-  background-color: #a1ff00;
+.menu-playlist::-webkit-scrollbar {
+  width: 0.3em;
 }
 
 /* installa app-John Doe */
@@ -138,8 +160,30 @@ body{
   z-index: 99;
 }
 
- #johndoe h2, #johndoe i, #johndoe a {
+#johndoe i{
+  margin-right: 5px;
+}
+
+#johndoe i, #johndoe a {
   padding:10px 0;
+}
+
+#johndoe h2{
+  line-height: 30px;
+}
+
+.sez-profilo, .crea-playlist{
+  display: flex;
+  padding:10px 0;
+}
+
+.profile{
+  width:30px;
+  height:30px;
+  background-color: grey;
+  border-radius: 50%;
+  padding:2px;
+  margin-right: 5px;
 }
 
 /* Sezione di destra */
@@ -161,7 +205,7 @@ body{
 }
 
 #right-section .menu-container a{
-  color:#bfbfbf;
+  color:rgba(211, 211, 211, 0.5);
   text-decoration: none;
   font-size: 14px;
   font-weight: 600;
@@ -171,8 +215,60 @@ body{
 /* sezione recently */
 
 .recently{
-  width:30%;
+  width:100%;
   height:calc(100vh - 93px);
+  display: flex;
+}
+
+/* Album-player immagini */
+
+#metal{
+  background-image: url('img/metal_lifting.jpg');
+}
+
+.album{
+width: 200px;
+height: 200px;
+background-size: cover;
+position:relative;
+margin:10px 10px;
+}
+
+.play-hover{
+  width:200px;
+  height:200px;
+}
+
+#metal:hover .play-hover{
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+}
+
+#metal:hover .fa-play-circle{
+  font-size: 50px;
+  color:#fff;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+
+#right-section h2{
+  padding: 0 10px;
+  color:#fff;
+  font-size: 20px;
+}
+
+#right-section h3{
+  text-align: center;
+  color:#fff;
+}
+
+#right-section span{
+  color:rgba(211, 211, 211, 0.5);
+  font-size: 14px;
+  padding: 0 70px;
 }
 
 /* Footer - player */

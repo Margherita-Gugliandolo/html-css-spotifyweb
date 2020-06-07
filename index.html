@@ -24,16 +24,27 @@
         <div id="left-section">
           <div class="home">
             <ul>
-              <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
-              <li><a href="#"><i class="fas fa-search"></i>Cerca</a></li>
-              <li><a href="#"><i class="fas fa-grip-lines-vertical"></i>La tua libreria</a></li>
+              <li>
+                <span id="slash"> | </span>
+                <a href="#"><img src="img/home.svg" alt="home">Home
+                </a>
+              </li>
+              <li><a href="#"><img src="img/search.svg" alt="search">Cerca</a></li>
+              <li><a href="#"><img src="img/libreria.svg" alt="libreria">La tua libreria</a></li>
             </ul>
           </div>
+
+          <!-- sezione PLAYLIST -->
           <div class="playlist">
             <h2>PLAYLIST</h2>
-            <a href="#"><i class="fas fa-plus-square"></i></a>
-            <span><a href="#">Crea Playlist</a></span>
+          <!-- + crea playlist -->
+            <div class="crea-playlist">
+              <a href="#"><i class="fas fa-plus-square"></i></a>
+              <span><a href="#">Crea Playlist</a></span>
+            </div>
           </div>
+
+          <!-- Menu con la scrollbar -->
           <div class="menu-playlist">
             <ul>
               <li><a href="#">Nuova Playlilist</a></li>
@@ -51,10 +62,15 @@
 
             </ul>
           </div>
+
+          <!-- sezione JohnDoe -->
           <div id="johndoe">
             <a href="#"><i class="far fa-arrow-alt-circle-down"></i>Installa app</a>
             <hr>
-            <h2><i class="far fa-user"></i>John Doe</h2>
+            <div class="sez-profilo">
+              <img class="profile" src="img/profile.svg" alt="profilo">
+              <h2>John Doe</h2>
+            </div>
           </div>
         </div>
         <!-- blocco contenuti musica -->
@@ -69,8 +85,16 @@
               <li><a href="#">SCOPRI</a></li>
             </ul>
           </nav>
-          <div class="recently">
-
+          <!-- Prima riga Recently -->
+          <h2>Recently played</h2>
+          <div id="metal" class="album">
+            <div class="play-hover">
+              <i class="far fa-play-circle"></i>
+            </div>
+            <div class="titolo-album">
+              <h3>Heavy metal</h3>
+              <span>subtitle</span>
+            </div>
           </div>
         </div>
       </div>
