@@ -89,10 +89,10 @@
           <!-- Prima riga Recently -->
           <div class="content">
             <h2>Recently played</h2>
-            <div class="riga">
-              <div id="metal" class="album">
-                <div class="play-hover">
-                  <i class="far fa-play-circle"></i>
+            <div class="riga-flex">
+              <div>
+                <div class="col">
+                  <a href="#"><img class="album" src="img/metal_lifting.jpg" alt="metal"><i class="far fa-play-circle"></i></a>
                 </div>
                 <div class="titolo-album">
                   <h3>Heavy metal</h3>
@@ -101,19 +101,19 @@
               </div>
 
 
-              <div id="stranger" class="album">
-                <div class="play-hover">
-                  <i class="far fa-play-circle"></i>
+              <div>
+                <div class="col">
+                  <a href="#"><img class="album" src="img/stranger.jpeg" alt="stranger"><i class="far fa-play-circle"></i></a>
                 </div>
                 <div class="titolo-album">
-                  <h3>Stranger Things, Vol. 1 (a Netflix Original series Soundtrack)</h3>
+                  <h3>Stranger Things, Vol. <br>1 (a Netflix original <br>Series Soundtrack)</h3>
                   <span>Kyle Dixon & Michael Stein</span>
                 </div>
               </div>
 
-              <div id="aquietplace" class="album">
-                <div class="play-hover">
-                  <i class="far fa-play-circle"></i>
+              <div>
+                <div class="col">
+                  <a href="#"><img class="album" src="img/aquietplace.jpeg" alt="aquietplace"><i class="far fa-play-circle"></i></a>
                 </div>
                 <div class="titolo-album">
                   <h3>A quiet place</h3>
@@ -121,9 +121,9 @@
                 </div>
               </div>
 
-              <div id="split" class="album">
-                <div class="play-hover">
-                  <i class="far fa-play-circle"></i>
+              <div>
+                <div class="col">
+                    <a href="#"><img class="album" src="img/split.jpeg" alt="split"><i class="far fa-play-circle"></i></a>
                 </div>
                 <div class="titolo-album">
                   <h3>Split</h3>
@@ -131,9 +131,9 @@
                 </div>
               </div>
 
-              <div id="cure" class="album">
-                <div class="play-hover">
-                  <i class="far fa-play-circle"></i>
+              <div>
+                <div class="col">
+                  <a href="#"><img class="album" src="img/cure.jpeg" alt="cure"><i class="far fa-play-circle"></i></a>
                 </div>
                 <div class="titolo-album">
                   <h3>A cure for wellness</h3>
@@ -141,9 +141,9 @@
                 </div>
               </div>
 
-              <div id="sinister" class="album">
-                <div class="play-hover">
-                  <i class="far fa-play-circle"></i>
+              <div>
+                <div class="col">
+                  <a href="#"><img class="album" src="img/sinister.jpeg" alt="sinister"><i class="far fa-play-circle"></i></a>
                 </div>
                 <div class="titolo-album">
                   <h3>Sinister</h3>
@@ -158,49 +158,52 @@
           <div class="content">
             <h2>Creato per John Doe</h2>
             <h4>Più ascolti, più accurati saranno i suggerimenti.</h4>
-            <div class="riga">
-              <div id="radar" class="album">
-                <div class="play-hover">
-                  <i class="far fa-play-circle"></i>
+            <div class="riga-flex">
+              <div>
+                <div class="col">
+                  <a href="#"><img class="album" src="img/radar.jpeg" alt="radar"><i class="far fa-play-circle"></i></a>
                 </div>
                 <div class="titolo-album">
                   <h3>Release radar</h3>
                 </div>
               </div>
 
-              <div id="daily" class="album">
-                <div class="play-hover">
-                  <i class="far fa-play-circle"></i>
+              <div>
+                <div class="col">
+                  <a href="#"><img class="album" src="img/mixdaily.jpeg" alt="mixdaily"><i class="far fa-play-circle"></i></a>
                 </div>
                 <div class="titolo-album">
                   <h3>Daily Mix 1</h3>
                 </div>
               </div>
+
             </div>
           </div>
 
           <!-- Artisti più popolari  -->
           <div class="content">
-            <h2>Creato per John Doe</h2>
+            <h2>Artisti più popolari</h2>
             <h4>Più ascolti, più accurati saranno i suggerimenti.</h4>
-            <div class="riga">
-              <div id="radar" class="album">
-                <div class="play-hover">
+            <div class="riga-flex">
+              <div>
+                <div class="col">
                   <i class="far fa-play-circle"></i>
+                  <a href="#"><img class="album circle" src="img/youg.jpeg" alt="youg"></a>
                 </div>
                 <div class="titolo-album">
                   <h3>Release radar</h3>
                 </div>
               </div>
 
-              <div id="daily" class="album">
-                <div class="play-hover">
-                  <i class="far fa-play-circle"></i>
+              <div>
+                <div class="col">
+                  <a href="#"><img class="album circle" src="img/player_left.jpg" alt="player-left"><i class="far fa-play-circle"></i></a>
                 </div>
                 <div class="titolo-album">
                   <h3>Daily Mix 1</h3>
                 </div>
               </div>
+
             </div>
           </div>
 
@@ -209,6 +212,36 @@
     <!-- Sezione inferiore/player -->
     <footer>
       <div id="player">
+        <!-- Brano nome -->
+        <div class="container-left">
+          <img id="sinister" src="img/sinister.jpeg" alt="sinister">
+
+          <div>
+            <h3>Sinister</h3>
+            <span>Brano nome</span>
+          </div>
+
+          <div>
+            <a href=""><i class="far fa-heart"></i></a>
+            <a href=""> <i class="far fa-folder"></i></a>
+          </div>
+        </div>
+
+        <div class="player-centrale">
+          <div>
+            <i class="fas fa-random"></i>
+            <i class="fas fa-step-backward"></i>
+            <i class="far fa-play-circle"></i>
+            <i class="fas fa-step-forward"></i>
+            <i class="fas fa-redo-alt"></i>
+          </div>
+        </div>
+
+        <div class="final-destinetion">
+          <i class="fas fa-list"></i>
+          <i class="fas fa-desktop"></i>
+        </div>
+
 
       </div>
     </footer>
