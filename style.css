@@ -227,40 +227,38 @@ body{
   color:#fff;
 }
 
-/* sezione recently */
-
-.recently{
-  width:100%;
-  height:calc(100vh - 93px);
-  display: flex;
-}
 
 /* Album-player immagini */
 .riga{
 display: flex;
-height:calc(100vh - 93px);
+width:100%;
+height:calc(100vh / 2);
 }
 
 /* foto album */
 #metal{
   background-image: url('img/metal_lifting.jpg');
+  width:calc(100% / 6);
 }
 #stranger{
-  background-image: url('img/stranger.jpeg')
+  background-image: url('img/stranger.jpeg');
+  width:calc(100% / 6);
 }
 #aquietplace{
   background-image: url('img/aquietplace.jpeg');
+  width:calc(100% / 6);
 }
 #split{
   background-image: url('img/split.jpeg');
+  width:calc(100% / 6);
 }
-
 #cure{
   background-image: url('img/cure.jpeg');
+  width:calc(100% / 6);
 }
-
 #sinister{
   background-image: url('img/sinister.jpeg');
+  width:calc(100% / 6);
 }
 
 
@@ -270,9 +268,10 @@ height:calc(100vh - 93px);
   font-size: 25px;
 }
 
+/* Recently */
 .album{
 width: calc(100% / 6);
-height: calc(100% / 4);
+height: calc(100vh / 5);
 background-size: cover;
 position:relative;
 margin:20px 20px;
@@ -302,23 +301,23 @@ margin:20px 20px;
   transform: translate(-50%, -50%);
 }
 
-
-
-.titolo-album{
-  width:100%;
+.titolo-album h3{
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content:space-around;
+  color: #fff;
+  margin-top: 15px;
+  font-size: 16px;
+  text-align:left;
 }
 
-#right-section h3{
-  margin-top: 20px;
-  color:#fff;
-}
-
-#right-section span{
-  color:rgba(211, 211, 211, 0.5);
-  font-size: 14px;
+.titolo-album span{
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+  font-weight: 800;
+  color:grey;
+  text-align: left;
+  padding:10px 0;
 }
 
 /* Footer - player */
