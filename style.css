@@ -132,6 +132,7 @@ body{
 .fa-plus-square{
   font-size: 40px;
   margin-right: 10px;
+  padding-top: 5px;
 }
 
 #crea-playlist{
@@ -139,6 +140,7 @@ body{
 }
 
 #crea-playlist span{
+  padding-top: 5px;
   line-height: 40px;
 }
 
@@ -146,6 +148,9 @@ body{
   text-decoration: none;
   color: rgba(211, 211, 211, 0.5);
   font-size: 14px;
+}
+#crea-playlist h2:hover{
+  color:#fff;
 }
 
 /* menu con la scrollbar */
@@ -233,6 +238,11 @@ body{
   flex-wrap: wrap;
 }
 
+#right-section .menu-container li{
+  list-style: none;
+  padding:30px 10px;
+}
+
 .menu-container li:first-child{
   position:relative;
 }
@@ -245,11 +255,6 @@ body{
   background-color: #a1ff00;
   border:none;
   margin:3px 0;
-}
-
-#right-section .menu-container li{
-  list-style: none;
-  padding:30px 10px;
 }
 
 #right-section .menu-container a{
@@ -276,7 +281,6 @@ body{
 
 /* Album-player immagini */
 .content{
-  width:100%;
   padding-bottom:5%;
 }
 
@@ -286,20 +290,27 @@ flex-wrap: wrap;
 }
 
 .album{
-  width:200px;
+  width:calc('100% - 200px / 6');
   height:200px;
   padding-top: 20px;
   padding-left: 20px;
 }
 
-.album:hover{
-  filter:opacity(60%);
+.col{
+position: relative;
 }
 
 .col i{
   display: none;
-  font-size: 50px;
   color:#fff;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+.col .fa-play-circle::before{
+  font-size: 50px;
   position:absolute;
   top:50%;
   left:50%;
@@ -308,10 +319,12 @@ flex-wrap: wrap;
 
 .col:hover i{
   display: block;
-}
+  background-color: rgba(0, 0, 0, 0.3);
+  width:90%;
+  height:90%;
+  margin-top: 10px;
+  margin-left: 10px;
 
-.col{
-  position: relative;
 }
 
 .circle{
@@ -415,11 +428,19 @@ flex-wrap: wrap;
 }
 
 .top-player i{
-  font-size: 20px;
+  font-size: 15px;
   color:#fff;
   margin:0 10px;
+  line-height: 10px;
 }
 
+.top-player i:hover, .heart i:hover{
+  color:rgba(255, 255, 255, 0.5);
+}
+
+.fa-play-circle::before{
+  font-size: 35px;
+}
 
 /* linea del player */
 .line-player{
