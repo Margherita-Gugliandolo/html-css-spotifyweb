@@ -400,8 +400,9 @@ flex-wrap: wrap;
   margin-right:10px;
 }
 
+/* player centrale */
 #player-centrale{
-  width:300px;
+  width:30%;
   display: flex;
   flex-direction: column;
   justify-content:space-between;
@@ -419,6 +420,8 @@ flex-wrap: wrap;
   margin:0 10px;
 }
 
+
+/* linea del player */
 .line-player{
   display: flex;
   justify-content: space-between;
@@ -426,11 +429,21 @@ flex-wrap: wrap;
 }
 
 #player-centrale .line-player hr{
-  width:200px;
-  height:5px;
-  background-color: #ccc;
   border:none;
   margin-top: 15px;
+  height:7px;
+}
+
+.line-hr{
+  width:100px;
+  background-color: #ccc ;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.line-hr-white{
+  width:300px;
+  background-color: rgba(142,142,142,0.2);
 }
 
 /* tempo di musica inizio e fine */
@@ -450,19 +463,31 @@ flex-wrap: wrap;
 }
 
 /* sezione footer destra */
-.final-destination{
+#final-destination{
+  width:18%;
   display: flex;
   align-items: center;
 }
 
-.final-destination i{
+#final-destination i{
   color:#fff;
   margin-right: 15px;
 }
 
-.final-destination span{
+#final-destination .line-hr{
+  width:50px;
+  border:none;
+  height:5px;
+}
+
+#final-destination .line-hr-white{
+  width:100px;
+  border:none;
+  height:5px;
+}
+
+/* #final-destination span{
   height:5px;
   width:100px;
-  margin-right: 20px;
   background-color: #fff;
-}
+} */
