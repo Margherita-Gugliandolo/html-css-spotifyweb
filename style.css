@@ -379,7 +379,7 @@ position: relative;
   justify-content: space-around;
   align-items: baseline;
   align-items: center;
-  width:25%;
+  width:20%;
 }
 
 #sinister{
@@ -402,10 +402,6 @@ position: relative;
   color:grey;
 }
 
-.heart{
-  margin-left: 30px;
-}
-
 .heart i{
   color:grey;
   margin-right:10px;
@@ -413,22 +409,22 @@ position: relative;
 
 /* player centrale */
 #player-centrale{
-  display: flex;
-  flex-direction: column;
-  justify-content:space-between;
-  width:45%;
-  margin:0 2.5%;
+  width:40%;
+
 }
 
 .top-player{
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .top-player i{
   font-size: 15px;
   color:#fff;
-  margin:0 10px;
+  display: flex;
+  justify-content: space-between;
+  padding:0 10px;
   line-height: 10px;
 }
 
@@ -436,7 +432,7 @@ position: relative;
   color:#fff;
 }
 
-.fa-play-circle::before{
+i.fa-play-circle{
   font-size: 35px;
 }
 
@@ -445,7 +441,6 @@ position: relative;
   width:100%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
 }
 #player-centrale .line-player span.line-hr{
   width:20%;
@@ -480,7 +475,7 @@ span.line-hr-white{
   display: flex;
   align-items: center;
   margin-right: 20px;
-  width:25%;
+  width:20%;
 }
 
 #final-destination i{
