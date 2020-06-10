@@ -10,7 +10,7 @@ body{
 /* Parte superiore/header */
 #header{
   position:fixed;
-  z-index: 999;
+  z-index: 2;
   width:100%;
   height:90px;
   top:0;
@@ -24,13 +24,8 @@ body{
 
 .flex-top{
   display:flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-}
-
-/* logo */
-#header img{
-  width:150px;
 }
 
 /* Bottone effettua l'upgrade */
@@ -73,6 +68,19 @@ body{
   position: fixed;
 }
 
+/* logo */
+#logo-lg{
+  max-width:130px;
+  margin-left:5px;
+  margin-top:20px;
+}
+
+#logo-small{
+  max-width: 40px;
+  margin-left: 5px;
+  margin-top: 20px;
+}
+
 #left-section h2{
   color:#fff;
   font-size: 14px;
@@ -89,16 +97,7 @@ body{
   color:#fff;
 }
 
-#left-section .home img{
-  width:25px;
-  margin-right: 5px;
-}
-.home ul li{
-  padding-bottom: 5px;
-  padding-left: 15px;
-}
-
-/* barretta laterale di visualizzato */
+/* barretta laterale di visualizzato menu di sinistra "home" */
 #slash{
   color:#a1ff00;
   font-size: 30px;
@@ -111,7 +110,15 @@ body{
 
 /* menu di sinistra */
 .home{
-  margin-top:95px;
+  margin-top:40px;
+}
+
+#left-section .home img{
+  width:25px;
+  margin-right: 5px;
+}
+.home ul li{
+  padding-bottom: 5px;
 }
 
 .playlist h2{
@@ -124,6 +131,7 @@ body{
   font-size: 40px;
   padding-top: 5px;
   margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 #crea-playlist{
@@ -154,7 +162,7 @@ body{
   font-size: 14px;
   padding-bottom:15px;
   list-style:none;
-  text-align: center;
+  padding-left: 20px;
 }
 
 .menu-playlist ul li a{
@@ -199,7 +207,6 @@ body{
 /* Sezione di destra */
 #right-section{
   width:calc(100% - 200px);
-  height:calc(100vh - 93px);
   overflow: auto;
   float: right;
   padding-top: 89px;
@@ -416,7 +423,6 @@ position: relative;
 .top-player{
   display: flex;
   justify-content: center;
-  align-items: flex-start;
 }
 
 .top-player i{
@@ -452,9 +458,6 @@ span.line-hr-white{
   width:70%;
  background-color: rgba(142,142,142,0.2);
 }
-
-
-
 
 /* tempo di musica inizio e fine */
 #player-centrale .line-player span.time{

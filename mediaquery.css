@@ -1,12 +1,16 @@
 @media all and (max-width:668px){
 
-#left_section{
+#left-section{
   max-width:60px;
   text-align: center;
 }
 
-#crea-playlist span a, #left-section .menu-left-section, .utente{
+#crea-playlist span a, #left-section .menu-left-section, .utente, .menu-playlist, .playlist, #crea-playlist, #logo-lg, #slash{
   display: none;
+}
+
+.fa-arrow-alt-circle-down{
+  font-size: 16px;
 }
 
 .album{
@@ -15,14 +19,61 @@
   margin-top:20px;
 }
 
+#logo-small{
+  display: block;
+}
+
+.fa-arrow-alt-circle-down{
+  font-size: 25px;
+}
+
+
 }
 @media all and (min-width:669px) and (max-width:992px){
+
+#left-section{
+  max-width: 200px;
+}
 
 #crea-playlist span a, .utente{
   display: block;
 }
 
-.menu-left-section{
+#logo-small{
   display: none;
 }
+
+#logo-lg{
+  display: block;
+}
+
+.utente{
+  display: none;
+}
+
+.fa-arrow-alt-circle-down{
+  font-size: 30px;
+  margin-left: 40px;
+}
+
+.profile{
+  margin-left: 40px;
+}
+
+.home ul li{
+  padding-left: 15px;
+}
+
+}
+
+@media all and (min-width:993px){
+
+#logo-small{
+  display: none;
+}
+
+.home ul li{
+  padding-left: 15px;
+}
+
 }

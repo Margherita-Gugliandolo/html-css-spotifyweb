@@ -12,60 +12,56 @@
   </head>
   <body>
     <!-- menu superiore fisso -->
-    <header>
-      <div id="header" class="centratura flex-top">
-        <img src="img/logo.svg" alt="logo">
+    <header id="header" class="centratura flex-top">
         <a href="#">EFFETTUA L'UPGRADE</a>
-      </div>
     </header>
     <!-- blocco principale centrale -->
-    <main>
-      <div id="container-principale">
+    <main id="container-principale">
         <!-- blocco menu sinistra -->
         <div id="left-section">
-          <div class="home">
-            <ul>
-              <li>
-                <span id="slash"> | </span>
-                <a href="#"><img src="img/home.svg" alt="home"><span class="menu-left-section">Home</span>
-                </a>
-              </li>
-              <li><a href="#"><img src="img/search.svg" alt="search"><span class="menu-left-section">Cerca</span></a></li>
-              <li><a href="#"><img src="img/libreria.svg" alt="libreria"><span class="menu-left-section">La tua libreria</span></a></li>
-            </ul>
-          </div>
-
-          <!-- Home xs -->
-
+          <div class="left-section-top">
+            <img id="logo-lg" src="img/logo.svg" alt="logo">
+            <img id="logo-small" src="img/logo-small.svg" alt="logo-small">
+            <div class="home">
+              <ul>
+                <li>
+                  <span id="slash"> | </span>
+                  <a href="#"><img src="img/home.svg" alt="home"><span class="menu-left-section">Home</span>
+                  </a>
+                </li>
+                <li><a href="#"><img src="img/search.svg" alt="search"><span class="menu-left-section">Cerca</span></a></li>
+                <li><a href="#"><img src="img/libreria.svg" alt="libreria"><span class="menu-left-section">La tua libreria</span></a></li>
+              </ul>
+            </div>
 
           <!-- sezione PLAYLIST -->
-          <div class="playlist">
-            <h2>PLAYLIST</h2>
-          <!-- + crea playlist -->
-            <div id="crea-playlist">
-              <a href="#"><i class="fas fa-plus-square"></i></a>
-              <span><a href="#"><h2>Crea Playlist</h2></a></span>
+            <div class="playlist">
+              <h2>PLAYLIST</h2>
+            <!-- + crea playlist -->
+              <div id="crea-playlist">
+                <a href="#"><i class="fas fa-plus-square"></i></a>
+                <span><a href="#"><h2>Crea Playlist</h2></a></span>
+              </div>
+            </div>
+
+            <!-- Menu con la scrollbar -->
+            <div class="menu-playlist">
+              <ul>
+                <li><a href="#">Nuova Playlilist</a></li>
+                <li><a href="#">Nuova Playlilist</a></li>
+                <li><a href="#">Nuova Playlilist</a></li>
+                <li><a href="#">Nuova Playlilist</a></li>
+                <li><a href="#">Nuova Playlilist</a></li>
+                <li><a href="#">Nuova Playlilist</a></li>
+                <li><a href="#">Nuova Playlilist</a></li>
+                <li><a href="#">Nuova Playlilist</a></li>
+                <li><a href="#">Nuova Playlilist</a></li>
+                <li><a href="#">Nuova Playlilist</a></li>
+                <li><a href="#">Nuova Playlilist</a></li>
+                <li><a href="#">Nuova Playlilist</a></li>
+              </ul>
             </div>
           </div>
-
-          <!-- Menu con la scrollbar -->
-          <div class="menu-playlist">
-            <ul>
-              <li><a href="#">Nuova Playlilist</a></li>
-              <li><a href="#">Nuova Playlilist</a></li>
-              <li><a href="#">Nuova Playlilist</a></li>
-              <li><a href="#">Nuova Playlilist</a></li>
-              <li><a href="#">Nuova Playlilist</a></li>
-              <li><a href="#">Nuova Playlilist</a></li>
-              <li><a href="#">Nuova Playlilist</a></li>
-              <li><a href="#">Nuova Playlilist</a></li>
-              <li><a href="#">Nuova Playlilist</a></li>
-              <li><a href="#">Nuova Playlilist</a></li>
-              <li><a href="#">Nuova Playlilist</a></li>
-              <li><a href="#">Nuova Playlilist</a></li>
-            </ul>
-          </div>
-
 
           <!-- sezione JohnDoe -->
           <div class="johndoe">
@@ -209,12 +205,9 @@
 
             </div>
           </div>
-
-      </div>
     </main>
     <!-- Sezione inferiore/player -->
-    <footer>
-      <div id="player">
+    <footer id="player">
         <!-- Brano nome -->
         <div id="container-left">
           <img id="sinister" src="img/sinister.jpeg" alt="sinister">
@@ -246,8 +239,6 @@
           </div>
         </div>
 
-
-
         <div id="final-destination">
           <i class="fas fa-list"></i>
           <i class="fas fa-desktop"></i>
@@ -255,9 +246,6 @@
           <span class="line-hr"></span>
           <span class="line-hr-white"></span>
         </div>
-
-
-      </div>
     </footer>
   </body>
 </html>
