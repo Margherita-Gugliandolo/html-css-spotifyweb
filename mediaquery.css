@@ -4,76 +4,73 @@
   max-width:60px;
   text-align: center;
 }
-
 #crea-playlist span a, #left-section .menu-left-section, .utente, .menu-playlist, .playlist, #crea-playlist, #logo-lg, #slash{
   display: none;
 }
-
 .fa-arrow-alt-circle-down{
   font-size: 16px;
 }
-
-.album{
-  width:100%;
-  height:200%;
-  margin-top:20px;
-}
-
 #logo-small{
   display: block;
 }
-
 .fa-arrow-alt-circle-down{
   font-size: 25px;
 }
-
-
+.music-card{
+  width:60%;
 }
+.content{
+  margin-left: 5%;
+}
+}
+
+
 @media all and (min-width:669px) and (max-width:992px){
 
 #left-section{
   max-width: 200px;
 }
-
 #crea-playlist span a, .utente{
   display: block;
 }
-
 #logo-small{
   display: none;
 }
-
 #logo-lg{
   display: block;
 }
-
 .utente{
   display: none;
 }
-
 .fa-arrow-alt-circle-down{
   font-size: 30px;
   margin-left: 40px;
 }
-
 .profile{
   margin-left: 40px;
 }
-
 .home ul li{
   padding-left: 15px;
 }
-
+.music-card{
+  width:30%;
+}
+.content{
+  margin-left:10%;
+}
 }
 
 @media all and (min-width:993px){
-
 #logo-small{
   display: none;
 }
-
 .home ul li{
   padding-left: 15px;
 }
-
+.music-card{
+  width:15%;
+}
+.content{
+  margin:auto;
+}
 }
