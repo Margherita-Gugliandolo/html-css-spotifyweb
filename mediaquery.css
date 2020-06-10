@@ -1,0 +1,28 @@
+@media all and (max-width:668px){
+
+#left_section{
+  max-width:60px;
+  text-align: center;
+}
+
+#crea-playlist span a, #left-section .menu-left-section, .utente{
+  display: none;
+}
+
+.album{
+  width:100%;
+  height:200%;
+  margin-top:20px;
+}
+
+}
+@media all and (min-width:669px) and (max-width:992px){
+
+#crea-playlist span a, .utente{
+  display: block;
+}
+
+.menu-left-section{
+  display: none;
+}
+}
