@@ -67,8 +67,8 @@ body{
   height:calc(100vh - 93px);
   float:left;
   background-color: #000;
-  position: relative;
   position: fixed;
+  display: flex;
 }
 
 #left-section h2{
@@ -284,70 +284,68 @@ body{
   padding-bottom:5%;
 }
 
-.riga-flex{
+.content ul{
 display: flex;
 flex-wrap: wrap;
+justify-content: space-around;
 }
 
-.album{
-  width:calc('100% - 200px / 6');
-  height:200px;
-  padding-top: 20px;
-  padding-left: 20px;
+.content li{
+  list-style: none;
+  padding: 10px 10px;
 }
 
-.col{
-position: relative;
+
+
+div, .copertina-album{
+  position:relative;
 }
 
-.col i{
+i.fa-play-circle{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  color:white;
+}
+
+.cover-size{
+height:180px;
+}
+
+/* hover e player */
+.copertina-album i.fa-play-circle{
   display: none;
-  color:#fff;
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  height:100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.col .fa-play-circle::before{
-  font-size: 50px;
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%, -50%);
-}
-
-.col:hover i{
+.relative:hover i.fa-play-circle{
   display: block;
-  background-color: rgba(0, 0, 0, 0.3);
-  width:90%;
-  height:90%;
-  margin-top: 10px;
-  margin-left: 10px;
-
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  color:#fff;
 }
 
-.circle{
-  border-radius: 100%;
-}
 
 /* Titolo e didascalia */
-#right-section h2{
+#right-section  .content h2{
   padding: 0 20px;
   color:#fff;
   font-size: 25px;
 }
 
-.titolo-album h3{
-  display: flex;
-  justify-content:space-around;
+.content h3{
   color: #fff;
   margin-top: 15px;
   font-size: 16px;
   text-align:center;
 }
 
-.titolo-album span{
+.content span{
   display: flex;
   justify-content: space-around;
   text-align: center;
@@ -506,9 +504,3 @@ position: relative;
   border:none;
   height:5px;
 }
-
-/* #final-destination span{
-  height:5px;
-  width:100px;
-  background-color: #fff;
-} */
