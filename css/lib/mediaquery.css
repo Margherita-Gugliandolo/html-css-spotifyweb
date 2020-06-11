@@ -1,10 +1,10 @@
 @media all and (max-width:668px){
 
 #left-section{
-  max-width:60px;
+  max-width:55px;
   text-align: center;
 }
-#crea-playlist span a, #left-section .menu-left-section, .utente, .menu-playlist, .playlist, #crea-playlist, #logo-lg, #slash{
+#crea-playlist span a, #left-section .menu-left-section, .utente, .menu-playlist, .playlist, #crea-playlist, #logo-lg, #slash, #utente{
   display: none;
 }
 .fa-arrow-alt-circle-down{
@@ -19,29 +19,38 @@
 .music-card{
   width:60%;
 }
-.content{
-  margin-left: 5%;
+.content, #right-section .menu-container{
+  margin-left: 15%;
 }
+
+.johndoe hr{
+  display: none;
+}
+
 }
 
 
 @media all and (min-width:669px) and (max-width:992px){
 
 #left-section{
-  max-width: 200px;
+  max-width: 150px;
 }
-#crea-playlist span a, .utente{
+#crea-playlist span a{
   display: block;
 }
+
+
 #logo-small{
   display: none;
 }
 #logo-lg{
   display: block;
 }
-.utente{
+
+.utente, #utente{
   display: none;
 }
+
 .fa-arrow-alt-circle-down{
   font-size: 30px;
   margin-left: 40px;
@@ -52,15 +61,20 @@
 .home ul li{
   padding-left: 15px;
 }
+
 .music-card{
   width:30%;
 }
-.content{
+.content, #right-section .menu-container{
   margin-left:10%;
 }
 }
 
 @media all and (min-width:993px){
+#left-section{
+  max-width: 200px;
+}
+
 #logo-small{
   display: none;
 }
@@ -70,7 +84,5 @@
 .music-card{
   width:15%;
 }
-.content{
-  margin:auto;
-}
+
 }
